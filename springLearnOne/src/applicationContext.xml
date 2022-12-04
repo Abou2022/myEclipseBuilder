@@ -25,7 +25,11 @@
     class="springLearnOne.springDemo.CricketCoach">
     
     <!-- set up setter injection -->
-    <property name="fortuneService" ref="myFortuneService"/>
+    <property name= "fortuneService" ref= "myFortuneService"/>
+    
+    <!-- inject literal values -->
+    <property name= "emailAddress" value= "chrichetcoach@gmail.com"/>
+     <property name= "team" value= "Sunrise Hyderabad"/>
     </bean>
     
     
