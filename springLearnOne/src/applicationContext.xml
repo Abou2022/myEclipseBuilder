@@ -7,9 +7,11 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
+	<!-- Load the properties file: sport.properties -->
+    <context:property-placeholder location= "classpath:sport.properties"/>
     <!-- Define your beans here -->
     
-     <!-- Define the dependency -->
+    <!-- Define the dependency -->
     <bean id="myFortuneService"
     class="springLearnOne.springDemo.HappyFortuneService">
     </bean>
@@ -28,8 +30,9 @@
     <property name= "fortuneService" ref= "myFortuneService"/>
     
     <!-- inject literal values -->
-    <property name= "emailAddress" value= "chrichetcoach@gmail.com"/>
-     <property name= "team" value= "Sunrise Hyderabad"/>
+    <!-- Dynamic coding with dollars sign -->
+    <property name= "emailAddress" value= "${foo.email}"/>
+     <property name= "team" value= "${foo.team}"/>
     </bean>
     
     
