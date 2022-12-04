@@ -2,6 +2,17 @@ package springLearnOne.springDemo;
 
 public class VolleyBallCoach implements Coach {
 
+	
+	//Define a private field for the dependency 
+	private FortuneService fortuneService;
+	
+	
+	
+	public VolleyBallCoach(FortuneService fortuneService) {
+		super();
+		this.fortuneService = fortuneService;
+	}
+
 	@Override
 	public String getDailyWorkout() {
 		return "Practice 4 times a day to become professional";
@@ -9,8 +20,8 @@ public class VolleyBallCoach implements Coach {
 
 	@Override
 	public String getDailyFortune() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return "I trust you!!! " + fortuneService.getFortune();
 	}
 
 }

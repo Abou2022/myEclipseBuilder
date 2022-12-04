@@ -7,12 +7,12 @@ public class MyApp {
 		//create the object
 		
 		//this is a hardcode
-		// Coach theCoach = new TrackCoach();
+		Coach theCoach = new TrackCoach();
 		
 		//Need to use spring to make configurable code 
 		
 		//use the object
-		//System.out.println(theCoach.getDailyWorkout()); 
+		System.out.println(theCoach.getDailyWorkout()); 
 	}
 
 }
