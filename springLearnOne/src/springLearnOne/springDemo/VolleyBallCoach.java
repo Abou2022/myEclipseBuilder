@@ -7,4 +7,10 @@ public class VolleyBallCoach implements Coach {
 		return "Practice 4 times a day to become professional";
 	}
 
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
