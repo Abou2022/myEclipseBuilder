@@ -16,7 +16,7 @@
     </bean>
     
     <bean id="myCoach" 
-    class="springLearnOne.springDemo.VolleyBallCoach">
+    class="springLearnOne.springDemo.BaseballCoach">
     
     <!-- set up constructor injection -->
     <constructor-arg ref="myFortune"/>
