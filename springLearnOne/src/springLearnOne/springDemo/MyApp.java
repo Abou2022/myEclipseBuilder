@@ -5,6 +5,7 @@ public class MyApp {
 	public static void main(String[] args) {
 		
 		//create the object
+		
 		//this is a hardcode
 		Coach theCoach = new TrackCoach();
 		
