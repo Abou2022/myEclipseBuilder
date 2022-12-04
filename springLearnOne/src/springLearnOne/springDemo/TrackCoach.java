@@ -2,10 +2,15 @@ package springLearnOne.springDemo;
 
 public class TrackCoach implements Coach {
 	
+	
+	
 	//Define a private field for the dependency 
 		private FortuneService fortuneService;
 		
 		
+		public TrackCoach() {
+			
+		}
 
 	public TrackCoach(FortuneService fortuneService) {
 		super();
