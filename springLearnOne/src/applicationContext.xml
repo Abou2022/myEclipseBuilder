@@ -17,14 +17,14 @@
     </bean>
     
     <bean id="myCoach" 
-    class="springLearnOne.springDemo.VolleyBallCoach">
+    class="springLearnOne.springDemo.RandomFortuneService">
     
     <!-- set up constructor injection -->
     <constructor-arg ref="myFortuneService"/>
     </bean>
     
-    <bean id="myCricketCoach"
-    class="springLearnOne.springDemo.CricketCoach">
+    <bean id="myVolleyBalll"
+    class="springLearnOne.springDemo.myVolleyBall">
     
     <!-- set up setter injection -->
     <property name= "fortuneService" ref= "myFortuneService"/>
@@ -34,6 +34,8 @@
     <property name= "emailAddress" value= "${foo.email}"/>
      <property name= "team" value= "${foo.team}"/>
     </bean>
+    
+    <bean id="myVolleyBallCoach" class="springLearnOne.springDemo.RandomFortuneService"></bean>
     
     
 </beans>
