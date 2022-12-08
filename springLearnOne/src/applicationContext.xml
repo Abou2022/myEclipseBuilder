@@ -13,18 +13,19 @@
     
     <!-- Define the dependency -->
     <bean id="myFortuneService"
-    class="springLearnOne.springDemo.HappyFortuneService">
+    class="springLearnOne.springDemo.RandomFortuneService">
     </bean>
     
-    <bean id="myCoach" 
-    class="springLearnOne.springDemo.RandomFortuneService">
+    <bean>
     
     <!-- set up constructor injection -->
     <constructor-arg ref="myFortuneService"/>
     </bean>
     
     <bean id="myVolleyBalllCoach"
-    class="springLearnOne.springDemo.myVolleyBallCoach">
+    class="springLearnOne.springDemo.VolleyBallCoach">
+   
+   
     
     <!-- set up setter injection -->
     <property name= "fortuneService" ref= "myFortuneService"/>

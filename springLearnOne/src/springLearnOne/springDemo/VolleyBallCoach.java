@@ -8,9 +8,9 @@ public class VolleyBallCoach implements Coach {
 	
 	
 	
-	public VolleyBallCoach(FortuneService fortuneService) {
+	public VolleyBallCoach(FortuneService theFortuneService) {
 		super();
-		this.fortuneService = fortuneService;
+		this.fortuneService = theFortuneService;
 	}
 
 	@Override
