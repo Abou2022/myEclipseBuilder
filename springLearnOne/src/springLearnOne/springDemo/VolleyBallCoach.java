@@ -23,5 +23,13 @@ public class VolleyBallCoach implements Coach {
 		
 		return "I trust you!!! " + fortuneService.getFortune();
 	}
+	
+	public void doMyStartupStuff() {
+		System.out.println("VolleyBall: inside method doMyStartupStuff");
+	}
+	//add a destroy method
+	public void doMyCleanupStuffYoYo() {
+		System.out.println("VolleyBall: inside method doMyCleanupStuffYoYo");
+	}
 
 }

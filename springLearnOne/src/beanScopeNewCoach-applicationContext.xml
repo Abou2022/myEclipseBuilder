@@ -18,8 +18,9 @@
    
     
     <bean id="myCoach"
-    class="springLearnOne.springDemo.TrackCoach"
-    scope="prototype">
+    class="springLearnOne.springDemo.VolleyBallCoach"
+    init-method="doMyStartupStuff"
+    destroy-method="doMyCleanupStuffYoYo">
     
     <!-- set up constructor injection -->
     <constructor-arg ref="myFortuneService"/>

@@ -15,11 +15,13 @@
     class="springLearnOne.springDemo.HappyFortuneService">
     </bean>
     
-   
     
     <bean id="myCoach"
     class="springLearnOne.springDemo.TrackCoach"
-    scope="prototype">
+    init-method="doMyStartupStuff"
+    destroy-method="doMyCleanupStuffYoYo"
+    >
+    <!-- The default scope is singleton -->
     
     <!-- set up constructor injection -->
     <constructor-arg ref="myFortuneService"/>
