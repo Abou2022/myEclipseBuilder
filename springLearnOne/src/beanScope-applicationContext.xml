@@ -17,7 +17,8 @@
     
     
     <bean id="myCoach"
-    class="springLearnOne.springDemo.TrackCoach">
+    class="springLearnOne.springDemo.TrackCoach"
+    scope="prototype">
     
     <!-- set up constructor injection -->
     <constructor-arg ref="myFortuneService"/>
